@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | Rafael Aguilar Kojima</title>
+    <link rel="stylesheet" href="/CSS/style.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Menu de Navegação -->
+    <nav>
+      <div class="menu">
+        <a href="index.html">Sobre Mim</a>
+        <a href="formacao.html">Formação</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="contato.html" class="active">Contato</a>
+      </div>
+
+      <button id="btn-tema">🌙</button>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <h1 class="tituloContato">Contato</h1>
+
+      <!-- Formulário de Contato -->
+      <form id="form-contato" class="formulario">
+        <label>Nome</label>
+        <input type="text" id="nome" />
+
+        <label>E-mail</label>
+        <input type="email" id="email" />
+
+        <label>Mensagem</label>
+        <textarea id="mensagem"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <!--Links para contatos como email e github-->
+      <div class="contatos">
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=kojimarafael12@gmail.com"
+          target="_blank">
+          
+          <i class="fa-solid fa-envelope"></i>
+          Email
+        </a>
+
+        <a href="https://github.com/Rafael-Kojima" target="_blank">
+          <i class="fa-brands fa-github"></i>
+          GitHub
+        </a>
+      </div>
+    </main>
+
+    <footer>© 2026 Rafael Aguilar Kojima</footer>
+
+   
+    <!-- Modal Estilizado ao enviar mensagem -->
+    <div id="modal-sucesso" class="modal">
+      <div class="modal-caixa">
+        <h3>Mensagem enviada!</h3>
+        <p>Sua mensagem foi enviada com sucesso.</p>
+        <button
+          id="fechar-modal"
+          onclick="
+            document.getElementById('modal-sucesso').classList.remove('visivel') ">OK
+        </button>
+      </div>
+    </div>
+
+     <script src="/JS/script.js"></script>
+  </body>
+</html>
